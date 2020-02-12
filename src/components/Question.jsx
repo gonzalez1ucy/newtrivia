@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-// import components
+// import components        
 
 
 class Question extends Component {
-  constructor(props) {
+  // constructor(props) {
 
-  }
+  // }
   render() {
     return (
       <div>
-        How many DUI'S did Lindsey Lohan get in the early 2000's?!
-       
+         {this.props.question_text}
       </div>
     );
   }

@@ -7,7 +7,7 @@ class Answer extends Component {
   render() {
     return (
       <div> 
-             6
+          {this.props.choices}
       </div>
     );
   }

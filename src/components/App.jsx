@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 import '../css/App.css';
-import Question from 'Question.jsx';
-import Answer from 'Answer.jsx';
+import Question from './Question.jsx';
+import Answer from './Answer.jsx';
 // import components
+
+const QUESTIONS = [
+  {question: "Lindsey Lohan", answers: [
+    "1",
+    "2",
+    "230"
+  ]}
+]
 
 class App extends Component {
 
@@ -10,9 +18,11 @@ class App extends Component {
     return (
       <div className="app">
         Trivia!
-        <Question />
-        <Answer />
-        <Answer />
+        <Question question_text={"What color is "}/>
+        <Answer choices={"10"}/>
+        <Answer choices={"20"}/>
+        <Answer choices={"30"}/>
+        <Answer choices={"40"}/>
         </div>
     );
   }
