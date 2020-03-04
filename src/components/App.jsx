@@ -9,26 +9,41 @@ const QUESTIONS = [
     "1",
     "2",
     "230",
-    "6"
+    "8",
   ], correct_choice_index: 3},
   {question_text: "How many Grammy's does Britney Spears have?", choices: [
     "1",
     "2",
     "230",
-    "6"
+    "8",
   ], correct_choice_index: 2}
 ]
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { clicked: "no" };
+  }
+
+  handleClick(){
+    console.log('Hello!');
+    if(QUESTIONS[1]["choices"][3]) {
+      console.log('Here!!');
+      this.setState({
+        clicked: "YAY!"
+      });
+
+    }
+  };
   render() {
     return (
       <div className="app">
         Trivia!
-        <Question question_text={QUESTIONS[0].question_text}/>
-        <Answer choices={QUESTIONS[0].choices[0]}/>
-        <Answer choices={QUESTIONS[0].choices[1]}/>
-        <Answer choices={QUESTIONS[0].choices[2]}/>
-        <Answer choices={QUESTIONS[0].choices[3]}/>
+        <Question question_text={QUESTIONS[1].question_text}/>
+        <Answer handleClick={() => this.handleClick()} choices={QUESTIONS[0].choices[0]}/>
+        <Answer handleClick={() => this.handleClick()} choices={QUESTIONS[0].choices[1]}/>
+        <Answer handleClick={() => this.handleClick()} choices={QUESTIONS[0].choices[2]}/>
+        <Answer handleClick={() => this.handleClick()} choices={QUESTIONS[0].choices[3]}/>
         </div>
     );
   }

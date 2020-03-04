@@ -23,12 +23,12 @@ Goal: Set up your your components
 - [ ] Style components in any way you choose.
 
 ### Day 3: Use multiple components to create a complex layout
-- [ ] Use the sample data to display a question and its answer options by creating components and using props
-- [ ] Make the answers clickable
+- [ x] Use the sample data to display a question and its answer options by creating components and using props
+- [x] Make the answers clickable
 - [ ] Use your remaining time to style your project
 
 ### Day 4: Read complex data from firebase
-- [ ] Replace sample data with firebase data to display the questions in your components
+- [x ] Replace sample data with firebase data to display the questions in your components
 
 ### Day 5: Use unidirectional data flow to pass down state
 - [ ] Set the initial state of your app component
